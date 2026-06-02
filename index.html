@@ -47,16 +47,13 @@ body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;back
 .profile-banner-overlay{position:absolute;inset:0;z-index:2;background:linear-gradient(to bottom,rgba(0,0,0,.15) 0%,rgba(0,0,0,.28) 48%,var(--bg) 100%),radial-gradient(circle at 50% 72%,transparent 0%,rgba(0,0,0,.42) 54%,rgba(0,0,0,.74) 100%)}
 .profile{text-align:center;padding:24px 0 28px;position:relative}
 .page.has-racer-banner .profile{padding-top:88px}
-.avatar-wrap{position:relative;display:inline-block;margin-bottom:14px;isolation:isolate}
-.avatar-wrap::before{content:'';position:absolute;width:176px;height:176px;left:50%;top:50%;transform:translate(-50%,-50%);z-index:-2;background:url('assets/avatar-racer-backplate.png') center/cover no-repeat;filter:drop-shadow(0 18px 34px rgba(0,0,0,.48));animation:backplateFloat 5.2s ease-in-out infinite}
-.avatar-wrap::after{content:'';position:absolute;width:132px;height:132px;left:50%;top:50%;transform:translate(-50%,-50%);z-index:-1;border-radius:50%;background:radial-gradient(circle,rgba(0,0,0,.05) 0%,rgba(0,0,0,.24) 58%,transparent 70%);box-shadow:0 0 24px var(--accent-glow)}
+.avatar-wrap{position:relative;display:inline-block;margin-bottom:14px}
 .avatar{position:relative;z-index:2;width:104px;height:104px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);display:block;transition:border-color .4s,box-shadow .4s;box-shadow:0 0 0 rgba(58,143,240,0);animation:avatarGlow 4.5s ease-in-out infinite}
 .profile > *:not(svg) { position: relative; z-index: 1; }
 .avatar-ring{position:absolute;z-index:3;inset:-7px;border-radius:50%;border:1.5px solid var(--accent-glow);box-shadow:0 0 18px var(--accent-glow);animation:spin 8s linear infinite,ringBreath 3s ease-in-out infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
 @keyframes ringBreath{0%,100%{opacity:.55;inset:-6px}50%{opacity:1;inset:-9px}}
 @keyframes avatarGlow{0%,100%{box-shadow:0 0 0 rgba(58,143,240,0)}50%{box-shadow:0 0 28px var(--accent-glow)}}
-@keyframes backplateFloat{0%,100%{transform:translate(-50%,-50%) scale(1)}50%{transform:translate(-50%,-52%) scale(1.025)}}
 .profile-name{font-family:var(--font-d);font-size:32px;letter-spacing:2px;color:var(--text);line-height:1;margin-bottom:6px}
 .profile-handle{font-family:var(--font-c);font-size:14px;color:var(--accent);letter-spacing:3px;text-transform:uppercase;margin-bottom:10px;transition:color .4s}
 .profile-bio{font-size:13.5px;color:var(--text-muted);line-height:1.6;max-width:300px;margin:0 auto 16px}
