@@ -1,0 +1,10 @@
+# Local Netlify folder
+.netlify
+node_modules/
+publish/
+ml-list.html
+fetch-ml-list.mjs
+recover-chrome-localstorage.mjs
+recovered-samgarage-data.json
+package-lock.json
+package.json
